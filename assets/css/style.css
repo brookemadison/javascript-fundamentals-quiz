@@ -1,0 +1,117 @@
+:root {
+    --white: #fffffA;
+    --grey: #f2f2Ef;
+    --dark-orange: #ff7f37;
+    --light-orange: #ffC46B;
+    --teal: #05686C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header nav {
+    margin: 0 10px;
+    padding: 11px 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.high-scores-btn {
+    color: var(--dark-orange);
+    text-decoration: none;
+}
+
+.high-scores-btn:hover {
+    color: var(--light-orange);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+main h1 {
+    text-align: center;
+    margin: 50px auto;
+    padding: 0 0 5px 0;
+}
+
+.quiz {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    .quiz {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+
+.start-btn {
+    border-radius: 20px;
+    width: 110px;
+    height: 35px;
+    color: var(--white);
+    background-color: #ff7f37;
+    border: none;
+}
+
+@-webkit-keyframes pulse-grow-on-hover {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulse-grow-on-hover {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.pulse-grow-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.pulse-grow-on-hover:hover, .pulse-grow-on-hover:focus, .pulse-grow-on-hover:active {
+    -webkit-animation-name: pulse-grow-on-hover;
+    animation-name: pulse-grow-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/*Used tutorial for pulse grow on hover*/
+/*Copyright (c) 2021 by Manoj Sah (https://codepen.io/techshiva/pen/MRbwRg)*/
