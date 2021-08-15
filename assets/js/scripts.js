@@ -150,23 +150,102 @@
 //QUIZ QUESTIONS
 const questionsArr = [
   {
-    questions: 'Commonly used data types DO NOT include:',
+    question: 'Commonly used data types DO NOT include:',
     choices: ['Strings', 'Booleans', 'Alerts', 'Number'],
+    correct: 'Alerts'
   },
   {
     question: 'The condition in an if/else statement is enclosed within _____.',
     choices: ['Quotation Marks', 'Curly Brackets', 'Square Brackets', 'Parenthesis'],
+    correct: 'Parenthesis'
   },
   {
     question: 'Arrays in JavaScript can be used to store _____.',
     choices: ['Numbers and Strings', 'Other arrays', 'Booleans', 'All of the Above'],
+    correct: 'All of the Above'
   },
   {
     question: 'String values must be enclosed within _____ when being assigned to variables.',
     choices: ['Commas', 'Quatation Marks', 'Curly Brackets', 'Paretheses'],
+    correct: 'Quotation Marks'
   },
   {
     question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
     choices: ['JavaScript', 'Terminal', 'For Loops', 'console.log'],
+    correct: 'console.log'
   },
 ]
+
+const startTimer = function(){
+  timerEl.textContent = "Time Left: 60s";
+
+  const interval = setInterval(function(){
+      timeLeft --;
+      if(currQuestion>=questionsArr.length){
+          clearInterval(interval);
+          timerEl.remove();
+      }
+      else if (timeLeft <= 0) {
+          clearInterval(interval);
+          timerEl.remove();
+          currQuestion = questionsArr.length;
+          endQuiz();
+      }
+      else{
+          timerEl.textContent = "Time Left: " + timeLeft + "s";
+      }
+  },1000);
+};
+     
+const choices = function(){
+
+
+
+// const nextQuestion = function(event){
+//     //How to check whether we already came from the last question?
+//     if(index == questionsArr.length){
+//         //console.log(event.path[0].outerText);
+//         answers = answers.concat(event.path[0].outerText);
+//         endQuiz();
+//         return;
+//     }
+
+//     //console.log(event.path[0].outerText);
+//     answers = answers.concat(event.path[0].outerText);
+
+//     //load new set of questions
+//     const questionEl = document.querySelector("#question");
+//     questionEl.textContent = questionsArr[index].question
+
+//     //load new set of buttons
+//     const buttonOne = document.querySelector("#btn-1");
+//     buttonOne.textContent = questionsArr[index].choices[0];
+//     const buttonTwo = document.querySelector("#btn-2");
+//     buttonTwo.textContent = questionsArr[index].choices[1];
+//     const buttonThree = document.querySelector("#btn-3");
+//     buttonThree.textContent = questionsArr[index].choices[2];
+//     const buttonFour = document.querySelector("#btn-4");
+//     buttonFour.textContent = questionsArr[index].choices[3];
+
+//     index++;
+// }
+
+// const endQuiz = function(){
+//   //console.log("You Finished the quiz!");
+//   $("#buttons-container").text("");
+
+//   const questionEl = document.querySelector("#question");
+//   questionEl.textContent = "Would you like to see your results?"
+
+//   const newButton = document.createElement("button");
+//   newButton.className = "quiz-btn";
+//   newButton.textContent = "See Results"
+//   newButton.addEventListener("click", seeResults);
+
+//   //Create Take Quiz Again button and append to buttons container -- Will have to reload the page.
+//     //Create Take Quiz Again button and append to buttons container -- Will have to reload the page
+
+//     const buttonsContainer = document.querySelector("#buttons-container");
+//     buttonsContainer.appendChild(newButton);
+// }
+

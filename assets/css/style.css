@@ -74,7 +74,7 @@ main h1 {
     width: 110px;
     height: 35px;
     color: var(--white);
-    background-color: #ff7f37;
+    background-color: var(--dark-orange);
     border: none;
 }
 

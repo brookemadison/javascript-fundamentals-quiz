@@ -31,6 +31,14 @@ header nav {
     align-items: center;
 }
 
+#timer {
+   color: var(--dark-orange);
+}
+
+#timer:hover {
+ color: var(--light-orange);
+}
+
 .home-btn {
     color: var(--dark-orange);
     text-decoration: none;
@@ -85,6 +93,12 @@ main h2 {
     border: none;
 }
 
+#notifier {
+    color: var(--dark-orange);
+    width: 200px;
+    font-size: 20px;
+}
+
 @-webkit-keyframes pulse-grow-on-hover {
     to {
         -webkit-transform: scale(1.1);
@@ -118,6 +132,8 @@ main h2 {
     animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    background-color: var(--light-orange);
+    color: var(--teal);
 }
 
 /*Used tutorial for pulse grow on hover*/
