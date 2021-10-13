@@ -31,21 +31,34 @@ header nav {
     align-items: center;
 }
 
-.high-scores-btn {
+#timer {
+   color: var(--dark-orange);
+}
+
+#timer:hover {
+ color: var(--light-orange);
+}
+
+.home-btn {
     color: var(--dark-orange);
     text-decoration: none;
 }
 
-.high-scores-btn:hover {
+.home-btn:hover {
     color: var(--light-orange);
     transition: all .2s ease-in-out;
     transform: scale(1.1);
 }
 
 main h1 {
+  	font-size: 60px;
     text-align: center;
     margin: 50px auto;
     padding: 0 0 5px 0;
+}
+
+main h2 {
+    margin-bottom: 25px;
 }
 
 .quiz {
@@ -69,14 +82,48 @@ main h1 {
     }
 }
 
-.start-btn {
+.quiz-btn {
     border-radius: 20px;
-    width: 110px;
+    display: block;
+    width: 450px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     height: 35px;
     color: var(--white);
     background-color: var(--dark-orange);
     border: none;
 }
+
+.button-grp {
+	margin-top: 30px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+	background: var(--dark-orange);
+	width: 250px;
+	font-size: 20px;
+	border: 1px solid var(--dark-orange);
+	border-radius: 50px;
+	margin: 10px 40px 10px 7.6px;
+	padding: 10px 10px;
+	color: #fff;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+	background: #ffC46B;
+}
+
+
+#progress {
+	font-size: 18px;
+}
+
+#notifier {
+    color: var(--dark-orange);
+    width: 200px;
+    font-size: 20px;
+}
+
 
 @-webkit-keyframes pulse-grow-on-hover {
     to {
@@ -111,7 +158,15 @@ main h1 {
     animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    background-color: var(--light-orange);
+    color: var(--teal);
 }
 
 /*Used tutorial for pulse grow on hover*/
+
 /*Copyright (c) 2021 by Manoj Sah (https://codepen.io/techshiva/pen/MRbwRg)*/
+
+
+
+
+
