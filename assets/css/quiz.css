@@ -51,6 +51,7 @@ header nav {
 }
 
 main h1 {
+  	font-size: 60px;
     text-align: center;
     margin: 50px auto;
     padding: 0 0 5px 0;
@@ -93,11 +94,36 @@ main h2 {
     border: none;
 }
 
+.button-grp {
+	margin-top: 30px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+	background: var(--dark-orange);
+	width: 250px;
+	font-size: 20px;
+	border: 1px solid var(--dark-orange);
+	border-radius: 50px;
+	margin: 10px 40px 10px 7.6px;
+	padding: 10px 10px;
+	color: #fff;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+	background: #ffC46B;
+}
+
+
+#progress {
+	font-size: 18px;
+}
+
 #notifier {
     color: var(--dark-orange);
     width: 200px;
     font-size: 20px;
 }
+
 
 @-webkit-keyframes pulse-grow-on-hover {
     to {
