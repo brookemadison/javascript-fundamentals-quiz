@@ -4,15 +4,20 @@
 
 * [Screenshot](#screenshot)
 * [Description](#description)
+* [Acceptance Criteria](#acceptance-criteria)
+* [Deployed Application](#deployed-application)
 * [Teachnologies Used](#technologies-used)
 * [License](#license)
 * [Contributors](#contributors)
 * [Questions](#questions)
 
+
 ## Description
+
 A timed quiz on JavaScript fundamentals that stores high scores so that you can gauge your progress compared to peers.
 
-## Acceptance Critera 
+
+## Acceptance Criteria 
 
 `GIVEN I am taking a code quiz`
 <br>`WHEN I click the start button`
@@ -25,6 +30,11 @@ A timed quiz on JavaScript fundamentals that stores high scores so that you can 
 <br>`THEN the game is over`
 <br>`WHEN the game is over`
 <br>`THEN I can save my initials and score`
+
+
+## Deployed Application
+
+ https://brookemadison.github.io/javascript-fundamentals-quiz/
 
  
 ## Screenshot
